@@ -1,0 +1,238 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Private Skating Lessons</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300' rel='stylesheet' type='text/css'>
+
+	<link rel='stylesheet' href='css/bootstrap.css'>
+<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/blue.css'>
+<link href="http://www.flexbooker.com/Content/widget_load.css" rel="stylesheet" /><script type="text/javascript" src="http://www.flexbooker.com/scripts/widget_load_min.js"></script> 
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="#">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+
+	<script src="js/modernizr.js"></script>
+	
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body class="">
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"></a>
+	<h1 class="mob-title">Private Skating Lessons</h1>
+</div>
+<div id="page">
+	<header id="header">
+		<div class="container">
+			<div class="col-sm-4">
+				<h1 id="logo"><a href="index.html">The Fortis Academy</a></h1>
+			</div>
+
+			<div class="col-sm-8">
+				<nav id="nav">
+	<ul id="navigation" class="group">
+		<li class='current'>
+			<a class='current' href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+			<ul>
+				<li><a href="staff.html">Josh Levine</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="camps.html">Camps</a>
+		</li>
+		<li>
+			<a href="fortispersonaltraining.html">Personal Training</a>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul><!-- #navigation -->
+</nav><!-- #nav -->
+			</div>
+		</div>
+	</header>
+
+<div id="page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Private Skating Lessons</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<main id="main" class="container page">
+	<div class="row">
+		<div class="col-lg-9 col-sm-8">
+			<article class="row entry">
+				<div class="col-xs-12">
+					<div class="entry-content">
+						<h1 class="entry-title">Details</h1>
+
+						<b>Location:</b> Bloomington Ice Gardens
+						<br>
+						<b>Cost:</b>
+						<table><br>
+							<tr>One Hour Sessions
+								<td>1 Athlete</td>
+								<td>$75</td>
+							</tr>
+								<td>2 Athletes</td>
+								<td>$50 per athlete</td>
+							<tr>
+								<td>3 Athletes</td>
+								<td>$45 per athlete</td>
+							</tr>
+						</table>
+						<table>
+							<tr>30 Minute Sessions
+								<td>1 Athlete</td>
+								<td>$45</td>
+							</tr>
+							<tr>
+								<td>2 Athletes</td>
+								<td>$40 per athlete</td>
+							</tr>
+							<tr>	
+								<td>3 Athletes</td>
+								<td>$30 per athlete</td>
+							</tr>
+						</table> 
+						
+						<h1>How to Sign Up</h1>
+						<b>Step 1:</b> <a href="http://www.flexbooker.com/widget/ec58d250-0480-453f-85f0-d9e8c871c2ea/mobile" id="flexbooker_widget_launch" ><img src="http://www.flexbooker.com/Content/booking_button.png" alt="Book now" /></a>  <br>
+						<b>Step 2:</b> Complete the <a href="images/FortisAcademyRegistrationForm-Hockey.pdf">registration form</a> and bring to your first training session<br>
+				
+
+						<br>
+			
+					</div>
+				</div>
+
+			</article>
+		</div>
+
+		<div class="sidebar col-lg-3 col-sm-4">
+			<aside class="widget">
+				<div class="item">
+					<a title="Bantam Hockey Dryland Training" href="images/russianbox.jpg" class="fb">
+						<img src='images/russianbox.jpg' width='700' height='504' alt='Hockey Specific Training' />
+						<div class="item-desc">
+							<h4>Russian Box Training</h4>
+						</div>
+					</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+</main>
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Employment</h3>
+	<p>Interested in becoming a Fortis Trainer? Shoot us a quick note through our Contact Us page!</p>
+</aside><!-- /widget -->
+			</div>
+		</div>
+
+		<div class="credits">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Olympic &amp; Fitness / Gym Theme</p>
+				</div>
+
+				<div class="col-sm-6 text-right">
+					<p>Made at <a href="http://www.cssigniter.com">cssigniter.com</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div> <!-- #page -->
+
+<div id="mobilemenu" class="mm-menu">
+	<ul class="group">
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+		</li>
+		<li>
+			<a href="camps.html">Camps</a>
+		</li>
+		<li>
+			<a href="fortispersonaltraining.html">Fortis Personal Training</a>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul>
+</div>
+
+<!-- Javascript
+================================================== -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/superfish.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/fancybox/jquery.fancybox.pack.js'></script>
+<script src='js/contact.js'></script>
+<script src='js/scripts.js'></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+</body>
+</html>

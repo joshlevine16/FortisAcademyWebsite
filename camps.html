@@ -1,0 +1,417 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Fortis Camps</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300' rel='stylesheet' type='text/css'>
+
+	<link rel='stylesheet' href='css/bootstrap.css'>
+<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/blue.css'>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="#">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+
+	<script src="js/modernizr.js"></script>
+
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body class="">
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"></a>
+	<h1 class="mob-title">Camps</h1>
+</div>
+<div id="page">
+	<header id="header">
+		<div class="container">
+			<div class="col-sm-4">
+				<h1 id="logo"><a href="index.html"><img src="" alt=""/>The Fortis Academy</a></h1>
+			</div>
+
+			<div class="col-sm-8">
+				<nav id="nav">
+		<ul id="navigation" class="group">
+		<li class='current'>
+			<a class='current' href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+			<ul>
+				<li><a href="staff.html">Josh Levine</a></li>
+				</li>
+				<li><a href="jakevillas.html">Jake Villas</a></li>
+				</li>
+			</ul>
+		</li>
+		
+		
+		<li>
+			<a>Training</a>
+			<ul>
+				<li>
+				<a href="fortispersonaltraining.html">Personal training</a>
+				</li>
+				<li>
+				<a href="camps.html">Camps</a>
+				</li>
+			</ul>
+		</li>	
+
+		<li>
+			<a href="fortisapparel.html">Apparel</a>
+		</li>
+		
+		<li>
+			<a>Additional Services</a>
+			<ul>
+				<li><a href="parentseminars.html">Parent Seminars</a></li>
+				</li>
+				<li><a href="trainthecoaches.html">Train the Coaches</a></li>
+				</li>
+				<li><a href="fortishockey.html">Fortishockey.com</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul><!-- #navigation -->
+</nav><!-- #nav -->
+			</div>
+		</div>
+	</header>
+
+<div id="page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 col-sm-8">
+				<h2>Fortis Camps & Training</h2> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<main id="main" class="container">
+						<div class="row test">
+						<h2 class="camp_page_intro_title">The Fortis Complete Athlete Program</h2>
+						<p class="camp_page_intro_text">Small Groups for Enhanced Instruction. Camps for Maximium Repetition. Mentorship for Well-Rounded Development. Read more about our <a href="fortismethod.html">training philosophy</a> and our <a href="completeathleteprogram.html">complete athlete program.</a></p>
+						</div>
+						<div class="row">
+						<h2 class="camp_page_intro_title">Year-Round/Current Training Opportunities</h2>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="privateskatinglessons.html">
+								<img src='images/hockeypucks.jpg' width='700' height='504' alt='Placeholder Image' class="camp_images"/>
+								<div class="item-desc">
+									<h4>Private Skating Lessons</h4>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-xs-6 item">
+							<a href="fortispersonaltraining.html">
+								<img src='images/weightlifting3.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Personal/Small Group Training</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="goalietraining.html">
+								<img src='images/Goalietraining.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Goalie Specific Training</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="jeffersonboyslacrosse.html">
+								<img src='images/lacrosseimage.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Jefferson Boys Lax Pre-Tryout Camp</h4>
+								</div>
+							</a>
+						</div>
+
+				
+					</div>
+
+<div id="page-title" style="padding: 0px">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Fortis Spring Camps 2017</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+						<div class="row">
+						<h3 style="padding-left: 15px">Camps Designed to Supplement Small Group Training</h3>
+						<div class="col-md-3 col-xs-6 item">
+							<a href="boysbrooklynparkspringoverspeed.html">
+								<img src='images/bsmboys.jpg' width='700' height='504' alt='Placeholder Image' class="camp_images" />
+								<div class="item-desc">
+									<h4>HS Overspeed Camp - Brooklyn Park</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="boysbloomingtonspringoverspeed.html">
+								<img src='images/jeffersonboyshockey.jpg' width='700' height='504' alt='Placeholder Image' class="camp_images" />
+								<div class="item-desc">
+									<h4>HS Overspeed Camp - Bloomington Ice Gardens</h4>
+								</div>
+							</a>
+						</div>
+
+						
+					</div>
+
+<div id="page-title" style="padding: 0px">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Fortis Summer Camps 2017</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+						<div class="row">
+						<h3 style="padding-left: 15px">Camps at Bloomington Ice Gardens - Bloomington, MN</h3>
+						<div class="col-md-3 col-xs-6 item">
+							<a href="12ugirlssummercamp.html">
+								<img src='images/u12girls.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images" />
+								<div class="item-desc">
+									<h4>12U Girls Camp</h4>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-xs-6 item">
+							<a href="10ugirlssummercamp.html">
+								<img src='images/10ugirlshockey.jpg' width='700' height='504' alt='Placeholder Image' class="camp_images" />
+								<div class="item-desc">
+									<h4>10U Girls Camp</h4>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-xs-6 item">
+							<a href="jeffersonhsgirlssummercamp.html">
+								<img src='images/jeffersongirlshockey2.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Jefferson HS Girls Camp</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="bloomingtonfridaymorningedges.html">
+								<img src='images/edges2soldout.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Summer Friday Morning Edges - SQ/PW Group</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="bloomingtonfridayafternoonedges.html">
+								<img src='images/hockeyedges2.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Summer Friday AFTERNOON Edges - SQ/PW Group</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="bloomingtonfridaymorningedgesbahsgroup.html">
+								<img src='images/hockeyedges2.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Summer Friday Morning Edges - BA/HS Group</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="collegemensmallgroup.html">
+								<img src='images/weightsonground.jpeg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>College Men's Small Group</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="jeffersonhsboysummertraining.html">
+								<img src='images/weightsonground.jpeg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Jefferson HS Boys Summer Training 2017</h4>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 col-xs-6 item">
+							<a href="jeffersonbaboysummertraining.html">
+								<img src='images/weightsonground.jpeg' width='700' height='504' alt='Placeholder Image' style="background: cover;" class="camp_images"/>
+								<div class="item-desc">
+									<h4>Jefferson BA Boys Summer Training 2017</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+
+<div id="page-title" style="padding: 0px">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Fortis Complete Athlete Small Groups</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+						<div class="row">
+
+							<h3 style="padding-left: 15px">Contact Us for More Information</h3>
+					
+
+					</div>
+
+
+
+	<div class="widget promo">
+	<div class="promo-inner group" style="background-color: black">
+		<h3>Train Hard. Eat Well. Live Fortis.</h3>
+		<a class="button read-more" href="contact.html">Contact Us</a>
+	</div>
+</div>
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Employment</h3>
+	<p>Interested in becoming a Fortis Trainer? Shoot us a quick note through our Contact Us page!</p>
+</aside><!-- /widget -->
+			</div>
+
+			</div>
+		</div>
+		<hr/>
+		<div class="credits">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Olympic &amp; Fitness / Gym Theme</p>
+				</div>
+
+				<div class="col-sm-6 text-right">
+					<p>Made at <a href="http://www.cssigniter.com">cssigniter.com</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+</div> <!-- #page -->
+
+<div id="mobilemenu" class="mm-menu">
+	<ul class="group">
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+		</li>
+		<li>
+			<a>Training</a>
+			<ul>
+				<li>
+				<a href="fortispersonaltraining.html">Personal training</a>
+				</li>
+				<li>
+				<a href="camps.html">Camps</a>
+				</li>
+			</ul>
+		</li>	
+
+		<li>
+			<a href="fortisapparel.html">Apparel</a>
+		</li>
+		<li>
+			<a>Additional Services</a>
+			<ul>
+				<li><a href="parentseminars.html">Parent Seminars</a></li>
+				</li>
+				<li><a href="trainthecoaches.html">Train the Coaches</a></li>
+				</li>
+				<li><a href="fortishockey.html">Fortishockey.com</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul>
+</div>
+<!-- Javascript
+================================================== -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/superfish.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/fancybox/jquery.fancybox.pack.js'></script>
+<script src='js/contact.js'></script>
+<script src='js/scripts.js'></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+</body>
+</html>

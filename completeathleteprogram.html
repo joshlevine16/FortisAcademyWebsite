@@ -1,0 +1,277 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>The Fortis Complete Athlete Program</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300' rel='stylesheet' type='text/css'>
+
+	<link rel='stylesheet' href='css/bootstrap.css'>
+<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/blue.css'>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="#">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+
+	<script src="js/modernizr.js"></script>
+
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body class="">
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"></a>
+	<h1 class="mob-title">Personal and Small Group Training</h1>
+</div>
+<div id="page">
+	<header id="header">
+		<div class="container">
+			<div class="col-sm-4">
+				<h1 id="logo"><a href="index.html">The Fortis Academy</a></h1>
+			</div>
+
+			<div class="col-sm-8">
+				<nav id="nav">
+	<ul id="navigation" class="group">
+		<li class='current'>
+			<a class='current' href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+			<ul>
+				<li><a href="staff.html">Josh Levine</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="camps.html">Camps</a>
+		</li>
+		<li>
+			<a href="fortispersonaltraining.html">Personal Training</a>
+		</li>
+		<li>
+			<a>Additional Services</a>
+			<ul>
+				<li><a href="parentseminars.html">Parent Seminars</a></li>
+				</li>
+				<li><a href="trainthecoaches.html">Train the Coaches</a></li>
+				</li>
+				<li><a href="fortishockey.html">Fortishockey.com</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul><!-- #navigation -->
+</nav><!-- #nav -->
+			</div>
+		</div>
+	</header>
+
+<div id="page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>The Fortis Complete Athlete Program</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<main id="main" class="container page">
+	<div class="row">
+		<div class="col-lg-9 col-sm-8">
+			<article class="row entry">
+				<div class="col-xs-12">
+					<div class="entry-content">
+						<h1 class="entry-title">Details</h1>
+
+						We want humble, hard working athletes that will put in the effort and time needed to improve. Fortis athletes are dedicated to reaching their goal and have the desire to overcome adversity, the humility to address mistakes, and the perseverance to train when it isn't easy. <br><br>
+
+						<b>We design and help implement a training plan for your player's development.</b> Playing lacrosse in the spring? Biologically behind your peers of a similar chronological age? Need more work on balance than speed? We take it all in and help guide your entire off-season training program. 
+						<br><br>
+
+						<b>We focus on the entire athlete, not just their sports performance.</b> From nutrition seminars to polishing a college essay to finding a summer internship, our trainers go the extra mile with Fortis complete athletes. We do our very best to see them succeed personally as well as in the sports arena. 
+						<br><br>
+
+						<b>The core of our complete athlete program is private or small group training.</b> The small group setting allows us to individualize training at an affordable price. 
+						<br><br>
+
+						<b>How do I become a Fortis complete athlete?</b><br>
+						1) Complete the registration form below.<br>
+						2) We will send you an email to get more information so we can put together the best plan for your development.<br>
+						3) Commit to the plan we provide you. 
+						<br><br>
+						
+
+				<div id="done"><div class="wrap success_message_background"><h2>Thank you for your message! We'll contact you shortly to discuss our program in further detail.</h2></div></div>
+
+				<form id="cform" class="contact" action="joinfortis.php">
+					<p>
+						<label for="name">Player Name:</label>
+						<input type="text" id="name" name="name"/>
+					</p>
+
+					<p>
+						<label for="email">Your Email:</label>
+						<input type="email" id="email" name="email"/>
+					</p>
+
+					<p>
+						<label for="parentcell">Cell Phone:</label>
+						<input type="text" id="parentcell" name="parentcell" value="952-123-4567 (John)"/>
+					</p>
+
+					<p>
+						<label for="subject">Subject:</label>
+						<input type="text" id="subject" name="subject" value="Join the Fortis Complete Athlete Program"/>
+					</p>
+
+					<p>
+						<label for="playerage">Player Birthdate:</label>
+						<input type="text" id="playerage" name="playerage" value="MM/DD/YYYY"/>
+					</p>
+
+					
+
+					<p><input id="contact-submit" type="submit" value="Send" class="button"/></p>
+				</form>
+
+						<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevBvyrMsN3wt9pMtr384SWR-tA5r1lcZsCMgFzSDD8SNQ4rA/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+
+						
+
+					</div>
+				</div>
+
+			</article>
+		</div>
+
+		<div class="sidebar col-lg-3 col-sm-4">
+			<aside class="widget">
+				<div class="item">
+				<a href="privateskatinglessons.html">
+								<img src='images/hockeypucks.jpg' width='700' height='504' alt='Placeholder Image' />
+								<div class="item-desc">
+									<h4>Private Skating Lessons</h4>
+								</div>
+					</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+</main>
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Employment</h3>
+	<p>Interested in becoming a Fortis Trainer? Shoot us a quick note through our Contact Us page!</p>
+</aside><!-- /widget -->
+			</div>
+		</div>
+
+		<div class="credits">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Olympic &amp; Fitness / Gym Theme</p>
+				</div>
+
+				<div class="col-sm-6 text-right">
+					<p>Made at <a href="http://www.cssigniter.com">cssigniter.com</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div> <!-- #page -->
+
+<div id="mobilemenu" class="mm-menu">
+	<ul class="group">
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+		</li>
+		<li>
+			<a href="camps.html">Camps</a>
+		</li>
+		<li>
+			<a href="fortispersonaltraining.html">Fortis Personal Training</a>
+		</li>
+		<li>
+			<a>Additional Services</a>
+			<ul>
+				<li><a href="parentseminars.html">Parent Seminars</a></li>
+				</li>
+				<li><a href="trainthecoaches.html">Train the Coaches</a></li>
+				</li>
+				<li><a href="fortishockey.html">Fortishockey.com</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul>
+</div>
+				
+<!-- Javascript
+================================================== -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/superfish.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/fancybox/jquery.fancybox.pack.js'></script>
+<script src='js/joinfortis.js'></script>
+<script src='js/scripts.js'></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+</body>
+</html>
