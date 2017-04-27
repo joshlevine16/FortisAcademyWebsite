@@ -1,0 +1,296 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Fortis Homepage</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300' rel='stylesheet' type='text/css'>
+
+	<link rel='stylesheet' href='css/bootstrap.css'>
+<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/blue.css'>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="#">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+
+	<script src="js/modernizr.js"></script>
+
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body class="home">
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"></a>
+	<h1 class="mob-title">Fortis Home</h1>
+</div>
+<div id="page">
+	<header id="header">
+		<div class="container">
+			<div class="col-sm-4">
+				<h1 id="logo"><a class='current' href="index.html"><img src="" alt=""/>The Fortis Academy</a></h1>
+			</div>
+
+			<div class="col-sm-8">
+				<nav id="nav">
+	<ul id="navigation" class="group">
+		<li class='current'>
+			<a class='current' href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+			<ul>
+				<li><a href="staff.html">Josh Levine</a></li>
+				</li>
+				<li><a href="jakevillas.html">Jake Villas</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="camps.html">Camps</a>
+		</li>
+		<li>
+			<a href="fortispersonaltraining.html">Personal Training</a>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul><!-- #navigation -->
+</nav><!-- #nav -->
+			</div>
+		</div>
+	</header>
+
+	<div id="slideshow" class="flexslider">
+		<ul class="slides">
+			<li style="background: url('images/ice_rink.jpg') no-repeat top center;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 col-lg-5">
+							<div class="sld-info">
+								<h3>Hockey Skating Lessons</h3>
+								<a class="button" href="contact.html">Contact Us to Learn More!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background: url('images/sprinters.jpg') no-repeat top center;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 col-lg-5">
+							<div class="sld-info">
+								<h3>Training With Purpose</h3>
+								<a class="button" href="contact.html">Contact Us to Learn More!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background: url('images/weightlifting3.jpg') no-repeat top center;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 col-lg-5">
+							<div class="sld-info">
+								<h3>Sport Specific Training. Creative. Modern. Intense.</h3>
+								<a class="button" href="contact.html">Contact Us to Learn More!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<main id="main" class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="widget home-popular-classes">
+					<h3 class="s-title">Coming Camps & Training</h3>
+					<div class="row">
+						<div class="col-md-3 col-xs-6 item">
+							<a href="privateskatinglessons.html">
+								<img src='images/hockeypucks.jpg' width='700' height='504' alt='Placeholder Image' />
+								<div class="item-desc">
+									<h4>Private Skating Lessons</h4>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-xs-6 item">
+							<a href="fallhockeytraininggroups.html">
+								<img src='images/russianbox.jpg' width='700' height='504' alt='Placeholder Image' />
+								<div class="item-desc">
+									<h4>Fall Hockey Dryland Small Group Training</h4>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-xs-6 item">
+							<a href="fortispersonaltraining.html">
+								<img src='images/weightlifting3.jpg' width='700' height='504' alt='Placeholder Image' style="background: cover;" />
+								<div class="item-desc">
+									<h4>Personal/Small Group Training</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="widget promo">
+	<div class="promo-inner group" style="background-color: black">
+		<h3>Train Hard. Eat Well. Live Fortis.</h3>
+		<a class="button read-more" href="contact.html">Contact Us</a>
+	</div>
+</div>
+
+				<div class="row">
+					<div class="col-lg-9 col-sm-8">
+						<h2 class="s-title">About Fortis</h3>
+
+	<div class="col-md-12 col-lg-11">
+		<div class="entry-wrap">
+				<h1 class="entry-title">Preparing Athletes for Success In & Outside Their Sport</h1>
+				<p>At Fortis, <b><i>we believe in the transformative power of sport</b></i> and physical fitness. The purpose behind all that we do is to prepare youth and high school athletes for success in and outside their sport. We want our athletes to excel and achieve their sports goals. At the same time, we believe that our success must also be equally measured by our ability to teach our athletes leadership, teamwork, the value of academic excellenece, grit, and much more!</p>
+
+				<p>Our training programs are <b><i>creative, modern, and innovative</b></i>. We think outside the box to find ways to help our athletes become quicker, faster, more explosive, and more agile. 
+		</div>
+	</div>
+
+	</div>
+
+
+
+					<div class="col-lg-3 col-sm-4 sidebar">
+						<aside class="widget post-type">
+	<h3 class="s-title">Meet our instructors</h3>
+	<div class="row">
+		<div class="col-sm-12 col-xs-6 item" style="margin-bottom: 2%;">
+			<a href="staff.html">
+				<img src='images/joshlevine.png' width='700' height='504' alt='Josh Levine' />
+				<div class="item-desc">
+					<h4>Josh Levine</h4>
+					<b>Fortis Coach & Trainer</b>
+				</div>
+			</a>
+		</div>
+		<div class="col-sm-12 col-xs-6 item">
+			<a href="jakevillas.html">
+				<img src='images/jakevillas.jpg' width='700' height='504' alt='Jake Villas' />
+				<div class="item-desc">
+					<h4>Jake Villas</h4>
+					<b>Fortis Coach & Trainer</b>
+				</div>
+			</a>
+		</div>
+
+
+	</div>
+</aside>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Employment</h3>
+	<p>Interested in becoming a Fortis Trainer? Shoot us a quick note through our Contact Us page!</p>
+</aside><!-- /widget -->
+			</div>
+
+			</div>
+		</div>
+		<hr/>
+		<div class="credits">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Olympic &amp; Fitness / Gym Theme</p>
+				</div>
+
+				<div class="col-sm-6 text-right">
+					<p>Made at <a href="http://www.cssigniter.com">cssigniter.com</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+</div> <!-- #page -->
+
+<div id="mobilemenu" class="mm-menu">
+	<ul class="group">
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Staff</a>
+		</li>
+		<li>
+			<a href="camps.html">Camps</a>
+		</li>
+		<li>
+			<a href="fortispersonaltraining.html">Fortis Personal Training</a>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul>
+</div>
+<!-- Javascript
+================================================== -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/superfish.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/fancybox/jquery.fancybox.pack.js'></script>
+<script src='js/contact.js'></script>
+<script src='js/scripts.js'></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+</body>
+</html>
